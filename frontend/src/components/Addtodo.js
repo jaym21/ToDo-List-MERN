@@ -26,7 +26,7 @@ class Addtodo extends Component {
     render() {
         return (
             <>
-                <input type="text" placeholder="Add a Todo" onChange={this.updateInput}/>
+                <input type="text" placeholder="Add a Todo" onChange={this.updateInput} value={this.state.userInput}/>
                 <button onClick={this.handleSubmit}>+</button>
             </>
         )
