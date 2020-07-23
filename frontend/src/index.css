@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container_main{
+    width: 100%;
+    height: 100vh;
+    background: #EDBB99;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container_app{
+    width: 25%;
+    height: 70vh;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+h1{
+    font-size: 40px;
+    color: #F5B041;
+    background: transparent;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+input{
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #F5B041;
+    outline: none;
+}
+button{
+    min-height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #F5B041;
+    color: white;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+button:hover{
+    background-color: #20bf6b;
+}
+ol{
+    margin-top: 30px;
+}
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #F5B041;
+}
+.todolist{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.todolist .fa-trash{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5B041;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+
+}
+
+.todolist .fa-trash:hover{
+    background-color: #E74C3C;
+}
+
+@media (max-width: 768px){
+    .container_app{
+        width: 55%;
+    }
+    .todolist .fa-trash{
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+    }
+}
